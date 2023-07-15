@@ -7,3 +7,6 @@ npm start
 ```
 npm run release
 ```
+
+## Issue
+https://github.com/modernweb-dev/web/issues/2386
