@@ -1,0 +1,23 @@
+{
+  "name": "web-dev-server-demo",
+  "private": "true",
+  "type": "module",
+  "engines": {
+    "node": "^18.12.0 || >=20.0.0",
+    "npm": ">=8.19.2"
+  },
+  "scripts": {
+    "start": "npm install && npm run serve",
+    "clean": "git clean -dfx",
+    "serve": "web-dev-server",
+    "serve:debug": "node --inspect-brk ./node_modules/@web/dev-server/dist/bin.js",
+    "serve:dist": "npx -y http-server dist --cors",
+    "release": "rollup -c",
+    "release:debug": "node --inspect-brk ./node_modules/rollup/dist/bin/rollup -c"
+  },
+  "devDependencies": {
+    "@types/node": "~18.16.19",
+    "@web/dev-server": "^0.3.0",
+    "@rollup/plugin-commonjs": "~25.0.2"
+  }
+}
