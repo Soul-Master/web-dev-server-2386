@@ -1,0 +1,18 @@
+# Banned folder names
+.vs/
+.code/
+.idea/
+bin/
+obj/
+build/
+node_modules/
+
+# Bannded file names
+*.suo
+*.user
+.DS_Store
+package-lock.json
+
+# Auto-generated folders
+/coverage
+/dist
